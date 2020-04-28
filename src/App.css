@@ -1,38 +1,92 @@
+body,
+html {
+  height: auto;
+  margin: 0;
+}
+
+html {
+  padding: 0;
+}
+
+html > body {
+  padding: 2rem;
+  background-color: #ecf0f5;
+}
+
+#root {
+  height: 100%;
+}
+
+.blue {
+  color: deepskyblue;
+}
+
+.container-div {
+  padding: 1rem;
+}
+
 .App {
   text-align: center;
+  height: 100%;
+   background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.company-info {
+  text-align: justify;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.company-info > img {
+  height: 2rem;
+}
+
+.customer-info-row {
+  text-align: justify;
+}
+
+.customer-info {
+  padding: 1rem;
+}
+
+.orders-row > .status-color {
+  background-color: yellow;
+  color: #000;
+  width: fit-content;
+}
+
+@media (max-width: 769px) {
+  .orders-row > .status-color {
+    padding: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 564px) {
+  .orders-row > .status-color {
+    width: fit-content;
+    padding: 0 15px;
+  }
+}
+
+.sale-description-row {
+  text-align: justify;
+}
+
+.summary {
+  background: #d7dbe0;
+  text-align: right;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.tnc {
+  text-align: justify;
+}
+
+.print {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.print > button {
+  margin: 1rem;
 }
